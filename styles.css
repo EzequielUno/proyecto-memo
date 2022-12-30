@@ -109,3 +109,48 @@ h1{
    background-repeat: no-repeat;
    background-size: 100%;
 }
+
+footer{
+   margin-top: 10px;
+   display: flex;
+   background-color: grey;
+   justify-content: space-around;
+   align-items: center;
+   height:50px
+}
+h3{
+   text-align: center;
+}
+
+.copyleft{
+   height: 40px;
+   width: 40px;
+   background-image: url("./imagenes/Copyleft.svg.png");
+   background-repeat: no-repeat;
+   background-size: 90%;
+   display: flex;
+}
+.redessociales{
+   display: flex;
+   justify-content: space-evenly;
+   height: 40px;
+   width: 150px;
+}
+
+footer div{
+   height: 40px;
+   width: 40px;
+   /* background-color: aliceblue; */
+}
+
+.linkedin{
+   background-image: url('./imagenes/linkedin.svg');
+   background-repeat: no-repeat;
+   background-size: 90%;
+}
+.whats{
+   background-image: url('./imagenes/whatsapp.svg');
+   background-repeat: no-repeat;
+   background-size: 90%;
+
+}
