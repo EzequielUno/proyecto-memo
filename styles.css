@@ -1,20 +1,48 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Montserrat";
+    font-family: "Montserrat"
 }
+
 h1{
     text-align: center;
 }
+
+.niveles{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+.desactivada {
+visibility: hidden;
+width: 10px;
+height: 10px;
+
+}
+
 .grilla{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 120px 120px 120px 120px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     gap: 5px 5px;
     justify-items: center;
+    grid-template-columns: repeat(8, 120px);
+    /* grid-template-rows: repeat(10, 20px); */
+    /* 120px 120px 120px 120px 120px 120px 120px 120px; */
+   }
+.principiante {
+   grid-template-columns: repeat(4, 120px)
+   /* 120px 120px 120px 120px; */
 }
+
+.intermedio {
+   grid-template-columns: repeat(6, 120px);
+   /* 120px 120px 120px 120px 120px 120px; */
+}
+
 .carta{
     border-radius: 5px;
     background-color: grey;
@@ -28,6 +56,8 @@ h1{
 .encontrada{
     opacity: 0.6;
 }
+
+/*CLASES PRINCIPIANTE*/
 
 ._1{
    background-image: url("./imagenes/1.svg"); 
@@ -109,6 +139,140 @@ h1{
    background-repeat: no-repeat;
    background-size: 100%;
 }
+/* CLASES INTERMEDIAS */
+
+._A1{
+   background-image: url("./imagenes/A1.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A2{
+   background-image: url("./imagenes/A2.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A3{
+   background-image: url("./imagenes/A3.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A4{
+   background-image: url("./imagenes/A4.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A5{
+   background-image: url("./imagenes/A5.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A6{
+   background-image: url("./imagenes/A6.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A7{
+   background-image: url("./imagenes/A7.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A8{
+   background-image: url("./imagenes/A8.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A9{
+   background-image: url("./imagenes/A9.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A10{
+   background-image: url("./imagenes/A10.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A11{
+   background-image: url("./imagenes/A11.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A12{
+   background-image: url("./imagenes/A12.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A13{
+   background-image: url("./imagenes/A13.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A14{
+   background-image: url("./imagenes/A1.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A15{
+   background-image: url("./imagenes/A2.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A16{
+   background-image: url("./imagenes/A3.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A17{
+   background-image: url("./imagenes/A4.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A18{
+   background-image: url("./imagenes/A5.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A19{
+   background-image: url("./imagenes/A6.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A20{
+   background-image: url("./imagenes/A7.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A21{
+   background-image: url("./imagenes/A8.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A22{
+   background-image: url("./imagenes/A9.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A23{
+   background-image: url("./imagenes/A10.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A24{
+   background-image: url("./imagenes/A11.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A25{
+   background-image: url("./imagenes/A12.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+._A26{
+   background-image: url("./imagenes/A13.svg"); 
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+/*FIN*/
 
 footer{
    margin-top: 10px;
@@ -132,22 +296,30 @@ h3{
 }
 .redessociales{
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
+   align-items: center;
    height: 40px;
-   width: 150px;
-}
-
-footer div{
-   height: 40px;
-   width: 40px;
-   /* background-color: aliceblue; */
+   width: 215px;
 }
 
 .linkedin{
+   height: 40px;
+   width: 40px;
+   justify-content: center;
+   /* background-color: aliceblue; */
+}
+
+.mail {
+   text-align: center;
+   font-size: 14px;
+   margin-left: 5px;
+}
+
+/* .linkedin{
    background-image: url('./imagenes/linkedin.svg');
    background-repeat: no-repeat;
    background-size: 90%;
-}
+} */
 .whats{
    background-image: url('./imagenes/whatsapp.svg');
    background-repeat: no-repeat;
