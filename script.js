@@ -23,7 +23,8 @@ for (i of cartas){
 };
 
 
-let nivelElegido = event.path[0].classList.value
+let nivelElegido = event.target.classList[0];
+
     if (nivelElegido=="principiante") {
         for (let i = 0; i < 16; i++) {
         cartas[i].classList.remove("desactivada")            
@@ -68,14 +69,14 @@ if (contador<2) {
 //    console.log(this);
 //    console.log(event.path[0].id);
 if(figuras.length==16){
-        posicion = event.path[0].id-1;
+        posicion = event.target.id-1;
         figura = figuras[posicion];
-        event.path[0].classList.add("_"+figura);
+        event.target.classList.add("_"+figura);
 };
 if(figuras.length==24){
-        posicion = event.path[0].id-1;
+        posicion = event.target.id-1;
         figura = figuras[posicion];
-        event.path[0].classList.add("_A"+figura);
+        event.target.classList.add("_A"+figura);
 };
 
 
@@ -131,12 +132,25 @@ let validocartas = () =>{
 }
 
 for(i of cartas){
-    i.addEventListener("click", vercarta)
+   i.addEventListener("click", vercarta)
+
+    // i.addEventListener("click", carta => {
+    //  console.dir(event.target.classList)
+    // });
+// };
+// event.path[0].id
+//    })
 };
 
 
 for(i of botonNiveles){
     i.addEventListener("click", nivel)
+    // i.addEventListener("click", veo => {
+        // console.dir(event.target.classList[0]);
+// 
+// 
+    // })
+
 };
 
 
